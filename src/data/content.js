@@ -252,9 +252,9 @@ export const offDuty = [
       'Nine straight years of NYSSMA solo scores at 97 or above, a gold medal in Québec, and December concerts alongside the North Shore Symphony Orchestra at Adelphi University from 2022 to 2024. I also assistant-taught a children’s ensemble at Virtuoso Suzuki Academy and have played for residents at an assisted living and memory care home.',
   },
   {
-    title: 'Soccer and track',
+    title: 'Soccer',
     body:
-      'Trained five days a week with Valencia CF Academy, won the Hershey U15 tournament with Syosset, played varsity soccer at Jericho, and still play club with Barcelona FC. I ran varsity winter and spring track too.',
+      'Played Soccer for 10+ years in teams like NY Barcelona FC and Valencia CF Academy. Won the Hershey U15 tournament with Syosset, and played varsity soccer at Jericho as the Center Back.',
   },
 ]
 
