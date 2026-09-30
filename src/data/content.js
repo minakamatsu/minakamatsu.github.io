@@ -4,8 +4,8 @@
 export const site = {
   first: 'Min-Naing',
   last: 'Akamatsu',
-  short: 'Min Akamatsu',
-  callsign: 'MIN',
+  short: 'Min-Naing Akamatsu',
+  callsign: 'AKAMATSU',
   email: 'makamats@purdue.edu',
   linkedin: 'https://www.linkedin.com/in/minakamatsu',
   github: 'https://github.com/minakamatsu',
