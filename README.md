@@ -1,1 +1,0 @@
-# minakamatsu.github.io
