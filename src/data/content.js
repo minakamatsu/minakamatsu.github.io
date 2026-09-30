@@ -200,8 +200,8 @@ export const work = [
 ]
 
 export const toolkit = [
-  { area: 'CAD', items: ['SolidWorks', 'Fusion 360', 'Onshape'], note: '70+ projects across all three' },
-  { area: 'Manufacturing', items: ['CNC machining', 'laser cutting', '3D printing'], note: 'Hands-on experience from high school' },
+  { area: 'CAD', items: ['SolidWorks', 'Fusion 360', 'Onshape'] },
+  { area: 'Manufacturing', items: ['CNC machining', 'laser cutting', '3D printing'] },
   { area: 'Hardware', items: ['mechanical design', 'rapid prototyping', 'robotics', 'Arduino'] },
   { area: 'FPV', items: ['race piloting', 'equipment setup', 'ELRS', 'RF coordination across analog and DJI'] },
 ]
@@ -240,7 +240,7 @@ export const offDuty = [
   {
     title: 'Soccer and track',
     body:
-      'Trained five days a week with Valencia CF Academy, won the Hershey U15 tournament with Syosset, played varsity soccer at Jericho, and still play club with Barcelona FC. I ran varsity winter and spring track too.',
+      'Played 10+ years with teams like NY Barcelona FC and Valencia CF Academy. Won the Hershey U15 tournament with Syosset and played varsity soccer at Jericho as the Center Back',
   },
 ]
 
