@@ -862,6 +862,12 @@ section:focus {
 .schem .s-fb { fill: none; stroke: var(--signal); stroke-width: 1.6; stroke-dasharray: 5 5; }
 .schem .s-mark-cmd { fill: var(--fde); }
 .schem .s-mark-fb { fill: var(--signal); }
+.schem .s-hood { stroke-width: 2.6; stroke-linecap: round; }
+.schem .s-inner-hood { stroke: var(--signal); stroke-width: 3; stroke-linecap: round; }
+.schem .s-arc { stroke-dasharray: 2 4; }
+.schem .s-wheel-v { stroke: var(--fde); stroke-width: 2; stroke-linecap: round; }
+.schem .s-target { stroke: var(--signal); stroke-width: 2.4; stroke-linecap: round; }
+.schem .s-label text.s-label-dim { fill: var(--steel); opacity: 0.7; }
 
 .rde-wave,
 .impeller {

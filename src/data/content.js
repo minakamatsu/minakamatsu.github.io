@@ -59,10 +59,39 @@ export const engineering = [
     when: 'Ongoing',
     where: 'Since high school',
     body:
-      "I've been doing CAD since middle school and designing jet engine components since high school. On my most recent engine I designed the combustion chamber and the centrifugal compressor in CAD, working through blade count, passages and chamber volume part by part, then 3D printed the compressor.",
+      "I've been designing jet engine components in CAD since high school. On my most recent engine I designed the combustion chamber and the centrifugal compressor in CAD, working through blade count, passages and chamber volume part by part, then 3D printed the compressor.",
     tags: ['CAD', 'Turbomachinery', 'Propulsion'],
     schematic: 'jet',
     image: 'images/jet-engine.jpg',
+  },
+  {
+    id: 'vex',
+    kind: 'Robotics',
+    title: 'VEX Robotics',
+    when: 'Feb 2024 – Jan 2026',
+    where: 'Coast-2-Coast Robotics',
+    body: [
+      'I was a CAD designer, builder and scout for Coast-2-Coast. I designed robot components and assemblies with the programming subteam, then helped build, scout and iterate on them between events. We won the 2025 New York Southern State Championship, and I reached the division semifinals at the VEX World Championship.',
+      "I started on another of the program's teams and moved to the C team, which is where I learned the most about actually making robots: fabrication, CNC work, build quality and iteration.",
+      'I also wrote Python control code for a kiwi drivetrain, where three omni wheels sit 120 degrees apart and every move is a blend of all three wheel speeds.',
+    ],
+    tags: ['CAD', 'Fabrication', 'CNC', 'Python', 'Scouting'],
+    schematic: 'kiwi',
+    image: 'images/vex-robot.jpg',
+  },
+  {
+    id: 'ftc',
+    kind: 'Robotics',
+    title: 'FIRST Tech Challenge',
+    when: 'High school',
+    where: 'Team 14461 RoboHawks, Jericho',
+    body: [
+      'I moved from a big VEX program to our school\'s FTC team because I wanted to own more of the design, and I liked how collaborative the team was. I was lead CAD designer, a builder and a driver.',
+      'My main subsystem was the shooter: a rigid outer hood with a freely rotating inner hood, so the launch angle adjusts and the robot can score from different spots on the field. In shot testing from multiple locations it scored over 95% of the time. I also designed a custom 3D-printed cable chain for it.',
+    ],
+    tags: ['Lead CAD', 'Shooter design', '3D printing', 'Driver'],
+    schematic: 'shooter',
+    image: 'images/ftc-robot.jpg',
   },
 ]
 
@@ -183,17 +212,6 @@ export const work = [
       'Track calls, directions and review clicks, and feed them into Accelerator OS, the client dashboard I built for these sites.',
       'Handle hosting, deployment, maintenance and client communication.',
     ],
-  },
-  {
-    when: 'Feb 2024 – Jan 2026',
-    org: 'Coast-2-Coast VEX Robotics',
-    role: 'CAD designer, builder and scout',
-    points: [
-      'Won the 2025 VEX Robotics New York Southern State Championship.',
-      'Reached the division semifinals at the VEX Robotics World Championship.',
-      'Designed robot components and assemblies in CAD with the programming subteam, then helped build, scout and iterate on them between events.',
-    ],
-    image: 'images/vex-robot.jpg', // optional
   },
   {
     when: 'Mar 2024 – Jan 2025',
