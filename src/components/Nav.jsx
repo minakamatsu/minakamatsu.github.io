@@ -1,26 +1,19 @@
 import { useEffect, useState } from 'react'
 import { site } from '../data/content'
+import { PAGES } from '../data/routes'
 import { asset } from '../lib/asset'
 
-const LINKS = [
-  ['flying', 'Flying'],
-  ['builds', 'Builds'],
-  ['engineering', 'Engineering'],
-  ['work', 'Work'],
-  ['toolkit', 'Toolkit'],
-  ['contact', 'Contact'],
-]
-
-export default function Nav({ go }) {
+export default function Nav({ link, route }) {
   const [solid, setSolid] = useState(false)
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setSolid(window.scrollY > 24)
+    // Over the home hero the bar stays clear until you scroll; every other page starts solid
+    const onScroll = () => setSolid(route !== '' || window.scrollY > 24)
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [route])
 
   useEffect(() => {
     if (!open) return
@@ -31,7 +24,7 @@ export default function Nav({ go }) {
 
   return (
     <header className={`nav${solid ? ' is-solid' : ''}${open ? ' is-open' : ''}`}>
-      <a className="nav-mark" href="#top" onClick={go('top')}>
+      <a className="nav-mark" {...link('')} aria-current={undefined}>
         {site.short}
       </a>
       <button
@@ -43,19 +36,22 @@ export default function Nav({ go }) {
       >
         {open ? 'Close' : 'Menu'}
       </button>
-      <nav id="nav-links" className="nav-links" aria-label="Sections">
-        {LINKS.map(([id, label]) => (
-          <a
-            key={id}
-            href={`#${id}`}
-            onClick={(e) => {
-              setOpen(false)
-              go(id)(e)
-            }}
-          >
-            {label}
-          </a>
-        ))}
+      <nav id="nav-links" className="nav-links" aria-label="Pages">
+        {PAGES.map(({ id, label }) => {
+          const props = link(id)
+          return (
+            <a
+              key={id}
+              {...props}
+              onClick={(e) => {
+                setOpen(false)
+                props.onClick(e)
+              }}
+            >
+              {label}
+            </a>
+          )
+        })}
         <a className="nav-resume" href={asset(site.resume)} download="Min-Naing_Akamatsu_Resume.pdf">
           Resume
         </a>

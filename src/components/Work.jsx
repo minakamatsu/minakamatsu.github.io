@@ -39,7 +39,7 @@ export default function Work() {
   const top = useTransform(scrollYProgress, (v) => `${(v * 100).toFixed(2)}%`)
 
   return (
-    <Section id="work" title="Work" lede="Most recent first. Racing, building, and a first startup in progress.">
+    <Section id="experience" title="Experience" lede="Most recent first. Racing, building, and a first startup in progress.">
       <div className="log" ref={ref}>
         <div className="log-spine" aria-hidden="true">
           <motion.div className="log-spine-fill" style={{ scaleY: reduced ? 1 : scrollYProgress }} />

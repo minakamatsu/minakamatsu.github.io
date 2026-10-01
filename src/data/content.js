@@ -19,7 +19,7 @@ export const flying = {
   body: [
     "Since the season started I've held the third-fastest spot in our team standings. Most of that comes from over 100 hours in the simulator, drilling racing lines, throttle control and precise maneuvering at speed.",
     'Off the course I help with the practical side of running a team: equipment setup, race strategy, organizing practices, and managing RF interference when analog FPV and DJI systems are flying in the same space.',
-    'The scheduling and flight-time problems I kept running into at practice turned into my LaunchPad project, which I cover under Work.',
+    'The scheduling and flight-time problems I kept running into at practice turned into my LaunchPad project, which I cover on the Experience page.',
   ],
   photo: {
     src: 'images/fpv-racing.jpg',
@@ -37,6 +37,20 @@ export const flying = {
 
 // Engineering section. `kind` is the small label above each title.
 export const engineering = [
+  {
+    id: 'nsds',
+    kind: 'Drones',
+    title: 'NSDS drone team',
+    when: 'Fall 2026 – Present',
+    where: 'Purdue National Security & Defense Society',
+    body: [
+      "On the society's drone team we build all kinds of quads, from tiny whoops up to 7 inch quads. Covering that whole range means working with various stacks, motors, props, battery cell counts and video systems.",
+      'We also CAD and manufacture our own parts in house, like frames and camera mounts. Designing for FPV means designing for crashes, so every part has to stay light, take hits, and still be quick to swap out at the field.',
+    ],
+    tags: ['Quad Builds', 'CAD', 'Manufacturing', 'Frames', 'Camera Mounts', 'Whoops to 7"'],
+    schematic: 'quads',
+    image: 'images/nsds-quads.jpg',
+  },
   {
     id: 'rde',
     kind: 'Research',
@@ -60,7 +74,7 @@ export const engineering = [
     where: 'Since high school',
     body:
       "I've been designing jet engine components in CAD since high school. On my most recent engine I designed the combustion chamber and the centrifugal compressor in CAD, working through blade count, passages and chamber volume part by part, then 3D printed the compressor.",
-    tags: ['CAD', 'Turbomachinery', 'Propulsion'],
+    tags: ['CAD', 'Manufacturing', 'Design'],
     schematic: 'jet',
     image: 'images/jet-engine.jpg',
   },
@@ -69,27 +83,26 @@ export const engineering = [
     kind: 'Robotics',
     title: 'VEX Robotics',
     when: 'Feb 2024 – Jan 2026',
-    where: 'Coast-2-Coast Robotics',
+    where: 'Coast-2-Coast Robotics, team 62880C',
     body: [
-      'I was a CAD designer, builder and scout for Coast-2-Coast. I designed robot components and assemblies with the programming subteam, then helped build, scout and iterate on them between events. We won the 2025 New York Southern State Championship, and I reached the division semifinals at the VEX World Championship.',
-      "I started on another of the program's teams and moved to the C team, which is where I learned the most about actually making robots: fabrication, CNC work, build quality and iteration.",
-      'I also wrote Python control code for a kiwi drivetrain, where three omni wheels sit 120 degrees apart and every move is a blend of all three wheel speeds.',
+      'I was a CAD designer, builder and scout for 62880C. I designed robot components and assemblies with the programming subteam, then helped build, scout and iterate on them between events. We won the 2025 New York Southern State Championship and reached the division semifinals at the VEX World Championship.',
+      'VEX is where I learned the most about actually making robots: fabrication, CNC work, build quality and iteration.',
     ],
-    tags: ['CAD', 'Fabrication', 'CNC', 'Python', 'Scouting'],
-    schematic: 'kiwi',
+    tags: ['CAD', 'CNC', 'Fabrication', 'Build Quality', 'Sensor Integration', 'Robotic Design'],
+    schematic: 'assembly',
     image: 'images/vex-robot.jpg',
   },
   {
     id: 'ftc',
     kind: 'Robotics',
     title: 'FIRST Tech Challenge',
-    when: 'High school',
+    when: 'Senior year, 2025–26',
     where: 'Team 14461 RoboHawks, Jericho',
     body: [
-      'I moved from a big VEX program to our school\'s FTC team because I wanted to own more of the design, and I liked how collaborative the team was. I was lead CAD designer, a builder and a driver.',
-      'My main subsystem was the shooter: a rigid outer hood with a freely rotating inner hood, so the launch angle adjusts and the robot can score from different spots on the field. In shot testing from multiple locations it scored over 95% of the time. I also designed a custom 3D-printed cable chain for it.',
+      'I was the lead CAD designer, but was also the builder and driver for the team. Moving from the big VEX program I used to be a part of, I joined a local FTC team for my last year to have more ownership over the design.',
+      'My main subsystem was the shooter: a rigid outer hood with a freely rotating inner hood, so the launch angle adjusts and the robot can score from different spots on the field. In shot testing from multiple locations it scored over 95% of the time.',
     ],
-    tags: ['Lead CAD', 'Shooter design', '3D printing', 'Driver'],
+    tags: ['Lead CAD', 'Robot Driver', 'Build Quality', 'Leadership'],
     schematic: 'shooter',
     image: 'images/ftc-robot.jpg',
   },
@@ -196,7 +209,8 @@ export const work = [
     role: 'Member, FPV drone team',
     points: [
       'Member of the student society that connects Purdue students with careers in national defense and security.',
-      "Fly on the society's FPV drone team.",
+      "On the society's FPV drone team, we build quads ranging from whoops to 7 inch quads.",
+      'CAD and manufacture in-house parts such as frames and camera mounts.',
     ],
   },
   {

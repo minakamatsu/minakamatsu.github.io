@@ -24,7 +24,7 @@ class SceneBoundary extends Component {
   }
 }
 
-export default function Hero({ go }) {
+export default function Hero({ link }) {
   return (
     <section className="hero" id="top" aria-label="Introduction">
       <SceneBoundary>
@@ -44,7 +44,7 @@ export default function Hero({ go }) {
           <a className="btn btn-signal" href={asset(site.resume)} download="Min-Naing_Akamatsu_Resume.pdf">
             Download resume
           </a>
-          <a className="btn btn-ghost" href="#contact" onClick={go('contact')}>
+          <a className="btn btn-ghost" {...link('contact')}>
             Get in touch
           </a>
         </div>

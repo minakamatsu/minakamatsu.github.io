@@ -3,10 +3,11 @@ import Entry from './Entry'
 import { engineering } from '../data/content'
 import RdeSchematic from './schematics/RdeSchematic'
 import ImpellerSchematic from './schematics/ImpellerSchematic'
-import KiwiSchematic from './schematics/KiwiSchematic'
+import AssemblySchematic from './schematics/AssemblySchematic'
 import ShooterSchematic from './schematics/ShooterSchematic'
+import QuadSizesSchematic from './schematics/QuadSizesSchematic'
 
-const DRAWINGS = { rde: RdeSchematic, jet: ImpellerSchematic, kiwi: KiwiSchematic, shooter: ShooterSchematic }
+const DRAWINGS = { rde: RdeSchematic, jet: ImpellerSchematic, assembly: AssemblySchematic, shooter: ShooterSchematic, quads: QuadSizesSchematic }
 
 export default function Engineering() {
   return (
